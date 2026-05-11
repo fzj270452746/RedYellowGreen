@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild -version)",
+      "Bash(xcodebuild -project RedYellowGreen.xcodeproj -scheme RedYellowGreen -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' build)",
+      "Bash(xcodebuild -project RedYellowGreen.xcodeproj -scheme RedYellowGreen -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.4.1' build)",
+      "Bash(xcodebuild -project RedYellowGreen.xcodeproj -scheme RedYellowGreen -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.4.1' -configuration Debug build)"
+    ]
+  }
+}

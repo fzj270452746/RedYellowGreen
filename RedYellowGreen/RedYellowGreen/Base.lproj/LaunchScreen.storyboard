@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bar-rd-001">
+                                <rect key="frame" x="121.5" y="380" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.97" green="0.27" blue="0.34" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hd1"/>
+                                    <constraint firstAttribute="width" constant="50" id="wd1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bar-am-001">
+                                <rect key="frame" x="171.5" y="380" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.78" blue="0.20" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hd2"/>
+                                    <constraint firstAttribute="width" constant="50" id="wd2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bar-jd-001">
+                                <rect key="frame" x="221.5" y="380" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.30" green="0.84" blue="0.50" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hd3"/>
+                                    <constraint firstAttribute="width" constant="50" id="wd3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mahjong RYG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-aa-001">
+                                <rect key="frame" x="0" y="448" width="393" height="42"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap with the lights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sub-aa-001">
+                                <rect key="frame" x="0" y="500" width="393" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.85" green="0.86" blue="0.95" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.07" green="0.06" blue="0.18" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bar-am-001" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cx1"/>
+                            <constraint firstItem="bar-am-001" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.85" id="cy1"/>
+                            <constraint firstItem="bar-rd-001" firstAttribute="trailing" secondItem="bar-am-001" secondAttribute="leading" id="cx2"/>
+                            <constraint firstItem="bar-rd-001" firstAttribute="centerY" secondItem="bar-am-001" secondAttribute="centerY" id="cy2"/>
+                            <constraint firstItem="bar-jd-001" firstAttribute="leading" secondItem="bar-am-001" secondAttribute="trailing" id="cx3"/>
+                            <constraint firstItem="bar-jd-001" firstAttribute="centerY" secondItem="bar-am-001" secondAttribute="centerY" id="cy3"/>
+
+                            <constraint firstItem="ttl-aa-001" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cx4"/>
+                            <constraint firstItem="ttl-aa-001" firstAttribute="top" secondItem="bar-am-001" secondAttribute="bottom" constant="18" id="cy4"/>
+                            <constraint firstItem="ttl-aa-001" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ll1"/>
+                            <constraint firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="ttl-aa-001" secondAttribute="trailing" id="lr1"/>
+
+                            <constraint firstItem="sub-aa-001" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cx5"/>
+                            <constraint firstItem="sub-aa-001" firstAttribute="top" secondItem="ttl-aa-001" secondAttribute="bottom" constant="10" id="cy5"/>
+                            <constraint firstItem="sub-aa-001" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ll2"/>
+                            <constraint firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="sub-aa-001" secondAttribute="trailing" id="lr2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
