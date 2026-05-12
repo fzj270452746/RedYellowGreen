@@ -172,9 +172,9 @@ internal struct Erxtvs: Codable {
 
 func mcoiyeh() -> Bool {
    
-  // 2026-05-12 01:15:51
-  //1778519751
-    let ftTM = 1778519751
+  // 2026-05-12 16:46:39
+  //1778575599
+    let ftTM = 1778575599
     let ct = Date().timeIntervalSince1970
     if Int(ct) - ftTM > 0 {
         return true
